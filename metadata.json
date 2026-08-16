@@ -1,0 +1,6 @@
+{
+  "name": "Cyborg",
+  "description": "Retro-futurist cybernetic augmentation portal with glitch art aesthetics and real-time diagnostic HUD.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

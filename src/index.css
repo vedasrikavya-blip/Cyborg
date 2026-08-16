@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+@theme {
+  --color-magenta-500: #ff00ff;
+  --color-cyan-400: #00f0ff;
+  --color-cyan-500: #00e0ee;
+  --color-cyan-600: #00c0cc;
+  --color-purple-400: #bd00ff;
+}
+
+@layer base {
+  body {
+    @apply bg-[#040509] text-white selection:bg-cyan-500/30 selection:text-cyan-200 cursor-none;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+}
+
+@layer utilities {
+  .clip-path-cyber {
+    clip-path: polygon(10% 0, 100% 0, 100% 70%, 90% 100%, 0 100%, 0 30%);
+  }
+  
+  .clip-path-terminal {
+    clip-path: polygon(0 0, 95% 0, 100% 5%, 100% 100%, 5% 100%, 0 95%);
+  }
+
+  .animate-shimmer {
+    animation: shimmer 2s infinite;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-black/20;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-cyan-900/40 rounded-full;
+  }
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
